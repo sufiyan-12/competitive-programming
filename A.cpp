@@ -1,4 +1,9 @@
 #include<bits/stdc++.h>
+
+#include <windows.h>
+#include <stdio.h>
+
+
 using namespace std;
 
 #define ll long long int
@@ -21,36 +26,12 @@ using namespace std;
 #define sz(x) (int)x.size()
 #define len(x) (int)x.length()
 
+#define rep(i, a, b) for(int i=a; i<=b; ++i)
+#define sort(x) sort(all(x))
+
 // code by sufiyan_12
-
-void nge(vi& a){
-	int n = a.size();
-	vi v(n, -1);
-	stack<int> st;
-	for(int i=0; i<n; ++i){
-		while(sz(st) and a[st.top()] <= a[i]){
-			v[st.top()] = a[i];
-			st.pop();
-		}
-		st.push(i);
-	}
-
-	for(int it: v){
-		cout << it << " ";
-	}
-}
-
 void solve(){
-	int n;
-	cin >> n;
-
-	vi a(n);
-
-	for(int i=0; i<n; ++i){
-		cin >> a[i];
-	}
-
-	nge(a);
+	cout << "Hello World";
 }
 
 int main()
